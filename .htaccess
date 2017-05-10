@@ -1,0 +1,8 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^www.eduardofilizzola.com.br/cicx [OR]
+RewriteCond %{HTTP_HOST} ^eduardofilizzola.com.br/cicx
+RewriteRule ^(.*)$ http://www.eduardofilizzola.com/cicx/$1  [L,R=301]
+
+#http://martinmelin.se/rewrite-rule-tester/
